@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #E2E8FA;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.centerDiv {
+    display: flex;
+    max-width: 1000px;
+    border-radius: 25px;
+    padding: 60px;
+    margin: 0 auto;
+    gap: 30px;
+    background-color: #FFFFFF;
+}
+
+.textDiv {
+    width: 100%;
+}
+
+.textDiv h4 {
+    color: #4A5980;
+    font-weight: 550;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.textDiv h1 {
+    color: #7098FF;
+    font-weight: 600;
+}
+
+.textDiv p {
+    color: #4A5980;
+}
+
+.form {
+    width: 40%;
+}
+
+#message_P {
+    color: red;
+}
+
+.loginpageLink {
+    margin: 0;
+}
+
+.socialIcons_rights {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    gap: 20px;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 20px;
+}
+
+.socialIcon_div {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: #fff;
+    color: #ced2da;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.socialIcon_div:hover {
+    transform: scale(1.1);
+}
+
+.socialIcons_rights p {
+    padding: 10px 25px 0 0;
+    margin-left: auto;
+    color: #4A5980;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px)  {
+    body {
+        padding-top: 50px;
+    }
+
+    .socialIcons_rights {
+        flex-direction: column;
+    }
+
+    .socialIcons {
+        margin: 0 auto;
+    }
+
+    .socialIcons_rights p {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    body {
+        padding-top: 150px;
+    }
+
+    .textDiv {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .centerDiv {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .socialIcon_div {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 283px) {
+    .socialIcon_div {
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+    }
+}

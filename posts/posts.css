@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F1F1F1;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.navDiv {
+  display: flex;
+  width: 100%;
+  background-color:#0f51f8;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.navDiv p {
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  margin: 0;
+  color: #fff;
+}
+
+.searchBar {
+  width: 80%;
+  border-radius: 8px;
+  text-align: center;
+  height: 40px;
+  border: 2px solid black;
+  outline: none;
+}
+
+.mainDiv {
+  margin-top: 30px;
+  display: flex;
+  gap: 40px;
+}
+
+.feedCol {
+  background-color: #0f51f8;
+  width: 71%;
+  padding: 20px 100px ;
+}
+
+.post {
+  background-color: brown;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 80%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  margin: 0 auto 30px;
+}
+
+.postCaption_IconsDiv {
+  background-color: #fff;
+  padding: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.postIcons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.postCaption {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+}
+
+.authorData {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.authorData div {
+  display: flex;
+  background-color: #fff;
+  width: 100%;
+  align-items: center;
+  gap: 0px;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.authorData img {
+  width: 50px;
+}
+
+.authorData p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-left: 10px;
+}
+
+.liked {
+  color: red !important;
+}
+
+.counter {
+  font-size: 22px;
+  margin: 0%;
+}
+
+.filterCol {
+  background-color: #19a53c;
+  width: 25%;
+  gap: 6px;
+  align-items: center;
+  padding-top: 30px;
+  position: sticky;
+  height: 100vh;
+  top: 0;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.filterTab {
+  background-color: #212529;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  cursor: default;
+  height: fit-content;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.filterTab:hover {
+  background-color: red;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(255, 0, 0, 0.4);
+}
+
+.HomePageButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+}
+
+.HomePageButtons div:hover,
+.HomePageButtons i:hover {
+  background-color: #ff6600;
+  color: #fff;
+}
+
+.addPostIcon {
+  padding: 12px 15px;
+  border-radius: 50%;
+  background-color: #000;
+  border: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .navDiv {
+    padding: 0 30px;
+  }
+  
+  .feedCol {
+    padding: 20px 50px;
+    width: 65%;
+  }
+  
+  .filterCol {
+    width: 30%;
+  }
+  
+  .post {
+    width: 90%;
+  }
+  
+  .mainDiv {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navDiv {
+    padding: 0 20px;
+    height: auto;
+    min-height: 60px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+  
+  .navDiv p {
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .searchBar {
+    width: 100%;
+    height: 35px;
+  }
+  
+  .mainDiv {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .feedCol {
+    width: 100%;
+    padding: 20px 30px;
+  }
+  
+  .filterCol {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 20px;
+  }
+  
+  .tabs {
+    flex-direction: row;
+    gap: 15px;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .filterTab {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .post {
+    width: 100%;
+  }
+  
+  .postCaption {
+    font-size: 20px;
+  }
+  
+  .authorData p {
+    font-size: 18px;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navDiv {
+    padding: 10px 15px;
+  }
+  
+  .navDiv p {
+    font-size: 16px;
+  }
+  
+  .searchBar {
+    height: 32px;
+    font-size: 14px;
+  }
+  
+  .feedCol {
+    padding: 15px 15px;
+  }
+  
+  .post {
+    border-radius: 8px;
+  }
+  
+  .postCaption {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .postCaption_IconsDiv {
+    padding: 12px;
+  }
+  
+  .postIcons {
+    gap: 15px;
+  }
+  
+  .authorData {
+    padding: 15px;
+  }
+  
+  .authorData img {
+    width: 40px;
+  }
+  
+  .authorData p {
+    font-size: 16px;
+  }
+  
+  .filterCol {
+    padding: 15px;
+  }
+  
+  .tabs {
+    gap: 10px;
+  }
+  
+  .filterTab {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .HomePageButtons {
+    right: 15px;
+    bottom: 15px;
+  }
+  
+  .addPostIcon {
+    padding: 10px 12px;
+  }
+  
+  .counter {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .navDiv p {
+    font-size: 14px;
+  }
+  
+  .feedCol {
+    padding: 10px 10px;
+  }
+  
+  .postCaption {
+    font-size: 16px;
+  }
+  
+  .authorData p {
+    font-size: 14px;
+  }
+  
+  .authorData img {
+    width: 35px;
+  }
+  
+  h1 {
+    font-size: 20px;
+  }
+  
+  .filterTab {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+}
